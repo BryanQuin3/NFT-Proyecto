@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/icono.png" type="image/png" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Swap</title>
+  </head>
+  <body class="body-swap">
+    <header class="header-swap">
+      <nav>
+        <div class="title-container">
+          <span class="title">NFT Marketplace</span>
+        </div>
+        <div class="alert-container">
+          <div class="alert" role="alert">
+            <span class="new">New</span>
+            <span class="alert-info">Start investing in digital art today</span>
+            <svg
+              class="svg-alert"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="menu-container">
+          <button id="boton">
+            <svg
+              class="icon"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <div id="menu">
+          <div class="links-container">
+            <a href="./index.html" class="link-style"> Home </a>
+            <a href="" class="link-style"> Swap </a>
+            <a href="#" class="link-style"> Blog </a>
+            <a href="#" class="link-style"> Contact </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="swap-container">
+      <form class="swap" id="swap-form">
+        <h3 class="main-title">Swap</h3>
+        <div class="swap-input">
+          <label class="swap-title" for="">You pay</label>
+          <div class="swap-info" id="swap-pay">
+            <input type="number" name="" id="" min="0" value="0" />
+            <span id="current-nft" class="crypto-container">
+              <img class="crypto-logo" src="./img/eth.png" alt="" />
+              <strong id="crypto-text">ETH</strong>
+              <img class="arrow" src="./img/arrow-down.svg" alt="" />
+            </span>
+          </div>
+        </div>
+        <div class="swap-arrow-container" id="swap-btn">
+          <img class="swap-icon" src="./img/arrow-down-2.svg" alt="" />
+        </div>
+        <div class="swap-input">
+          <label class="swap-title" for="">You receive</label>
+          <div class="swap-info" id="swap-receive">
+            <input id="receive" type="number" name="" id="" min="0" value="0" />
+            <span id="token" class="token crypto-container">
+              <strong id="token-text">Select token</strong>
+              <img class="arrow" src="./img/arrow-down.svg" alt="" />
+            </span>
+          </div>
+        </div>
+        <button class="btn-swap" id="btn-calculate">Swap</button>
+      </form>
+      <section class="modal-container hidden" id="modal">
+        <div class="modal-tokens">
+          <header class="modal-header">
+            <h3>Select a token</h3>
+            <img id="exit-modal" src="./img/cancel.svg" alt="" />
+          </header>
+          <div class="search-container">
+            <img src="./img/search.svg" alt="" />
+            <input type="text" placeholder="Search" />
+          </div>
+          <section class="most-used">
+            <span class="token-container eth">
+              <img src="./img/eth.png" alt="" />
+              <strong>ETH</strong>
+            </span>
+            <span class="token-container dai">
+              <img src="./img/dai.png" alt="" />
+              <strong>DAI</strong>
+            </span>
+            <span class="token-container usdc">
+              <img src="./img/usdc.png" alt="" />
+              <strong>USDC</strong>
+            </span>
+            <span class="token-container usdt">
+              <img src="./img/usdt.png" alt="" />
+              <strong>USDT</strong>
+            </span>
+            <span class="token-container wbtc">
+              <img src="./img/wbtc.png" alt="" />
+              <strong>WBTC</strong>
+            </span>
+            <span class="token-container weth">
+              <img src="./img/weth.png" alt="" />
+              <strong>WETH</strong>
+            </span>
+          </section>
+          <div class="line"></div>
+          <section class="list-tokens">
+            <div class="token-of-list eth">
+              <img src="./img/eth.png" alt="" />
+              <strong>Ether</strong>
+            </div>
+            <div class="token-of-list aave">
+              <img src="./img/aave.png" alt="" />
+              <strong>Aave</strong>
+            </div>
+            <div class="token-of-list cronos">
+              <img src="./img/cronos.png" alt="" />
+              <strong>Cronos</strong>
+            </div>
+            <div class="token-of-list fantom">
+              <img src="./img/ftm.png" alt="" />
+              <strong>Fantom</strong>
+            </div>
+            <div class="token-of-list matic">
+              <img src="./img/matic.png" alt="" />
+              <strong>Matic</strong>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script src="./swap.js"></script>
+  </body>
+</html>
